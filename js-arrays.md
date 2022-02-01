@@ -27,11 +27,14 @@ people[people.length - 1] // => "Gale"
 
 ---
 
-## Array properties and methods
+## Array properties
 
 Arrays have a `.length` property that gives us the length of the array.
 
-They also have many methods to let us manipulate and interrogate them. You'll need to look them up as you get to know them!
+```js
+const colors = ["red", "purple", "blue", "orange"]
+colors.length // => 4
+```
 
 [MDN JavaScript Reference: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -39,7 +42,7 @@ They also have many methods to let us manipulate and interrogate them. You'll ne
 
 ## Looping through an array with `for`
 
-We can use a `for` loop to get each index in an array and then use that index to get each member.
+We can use a `for` loop to get each index in an array and then use that index to get each item in the array in turn.
 
 ```js
 for (let i = 0; i < people.length; i++) {
@@ -61,9 +64,9 @@ while (i < people.length) {
 
 ---
 
-## `for-of` loops
+## `for...of` loops
 
-For a simpler way to loop over an array and get each member, we can use a `for-of` loop.
+For a simpler way to loop over an array and get each item, we can use a `for...of` loop.
 
 ```js
 for (let person of people) {
@@ -75,7 +78,21 @@ As the loop runs, each member of `people` is assigned to `person` in order. We _
 
 ---
 
+## Array methods
+
+Arrays have many methods to let us manipulate and interrogate them.
+
+A _method_ is the name for a function that we can access like a property. You need to use parentheses after a method to call it, just like you do with a function.
+
+You'll need to look them up. A lot.
+
+[MDN JavaScript Reference: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+---
+
 ## Adding to and removing from the ends of arrays
+
+Here are some methods that we use all the time with arrays.
 
 ```js
 const students = ['Sam', 'Val', 'Landry']
@@ -95,6 +112,7 @@ students // => ["Sam", "Val", "Landry"]
 ---
 
 ## Finding things in arrays
+### with `indexOf()`
 
 ```js
 const students = ['Sam', 'Val', 'Landry']
@@ -107,6 +125,7 @@ students.indexOf('Logan') // => -1
 ---
 
 ## Removing things from arrays
+### with `splice()`
 
 ```js
 const students = ['Sam', 'Val', 'Landry']
@@ -123,7 +142,7 @@ students // => ["Sam", "Landry"]
 students.slice() // returns a new array
 ```
 
-There is also a newer syntax for copying arrays using the spread operator.
+A newer syntax for copying arrays uses three dots `...` called the _spread operator_.
 
 ```js
 let newArray = [...students]
@@ -293,23 +312,23 @@ for (let word of words) {
 
 ## BUT WAIT!
 
-## JavaScript has built-in Array methods that do all these common transformations
+### JavaScript has built-in Array methods that do all these common transformations
 
-Transforming, filtering, and reducing all can be done with array methods.
 
-- `.map()`
-- `.filter()`
-- `.reduce()`
+
+- `.map()`  - _transforms an array into a new array_
+- `.filter()` - _keeps items that match a condition, returns a new array_
+- `.reduce()` - _produces a single value from an array_
 
 ## These methods take functions as arguments.
 
 ---
 
-## Use a function as an argument
+## Two different ways to declare functions with names
 
 In JavaScript, functions are another type of value.
 
-They can have names, via the `function` keyword:
+Functions can have names, via the `function` keyword:
 
 ```js
 
@@ -327,15 +346,15 @@ return `Hello, ${name}.`
 }
 
 ```
-Notice that there is no name after the `function` keyword; the name of the function is the variable name.
-
-Functions can also have no name. In this case we call them _anonymous_ functions.
+ ☝️Notice that there is no name after the `function` keyword in this example; the name of the function is the variable name. This is called a _function expression_.
 
 ---
 
 ## Anonymous functions
 
-Use the `function` keyword, but leave the name out.
+Functions can also have no name. When we don't give them a name they are called _anonymous_ functions.
+
+Here's an example of a anonymous function that uses the function keyword. Notice that there's no name after the function keyword and before the parentheses!
 
 ```js
 function (score) {
@@ -343,7 +362,9 @@ function (score) {
 }
 ```
 
-This is useful when we are using a function as an argument, which we do with `map`, `filter`, and `reduce`.
+You might be wondering how we _call_ this function. Good catch!
+
+Anonymous functions are useful when we are using a function as an argument, which we do with `map`, `filter`, and `reduce`.
 
 ---
 
@@ -358,7 +379,7 @@ const wordLengths = words.map(function (word) {
 })
 ```
 
-Note that `map` runs the loop for us! The function it takes as an argument (the _callback_ function) takes the individual elements one at a time as its argument (_`word`_).
+Note that `map` runs the loop for us! The anonymous function it takes as an argument (the _callback_ function) takes the individual elements one at a time as its argument (_`word`_).
 
 `wordLengths` is the new array returned by `map`.
 
