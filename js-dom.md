@@ -107,6 +107,8 @@ let el = document.querySelector('.input--name')
 el.classList.add('highlight')
 ```
 
+[MDN Documentation on using an element's classList property](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+
 ---
 
 # Adding things to the DOM
