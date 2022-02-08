@@ -13,3 +13,4 @@
 - [JS Arrays](js-arrays.md)
 - [JS and the DOM](js-dom.md)
 - [JS Objects](js-objects.md)
+- [AJAX](js-ajax.md)
