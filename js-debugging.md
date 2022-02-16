@@ -99,6 +99,8 @@ Linters can be really helpful, but can also get in the way if they are overly se
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) extension
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) extension
 - LiveShare
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) -> autocomplete for file paths
+- [Webhint](https://webhint.io/docs/user-guide/extensions/vscode-webhint/) -> checks your code for best practices and common problems
 
 ---
 
@@ -269,4 +271,3 @@ function doStuff (arg) {
   }
 }
 ```
-{"mode":"full","isActive":false}
