@@ -19,3 +19,4 @@
 ### Phase 2: Back End with Python
 
 - [Intro to Python](intro-python.md)
+- [Python Notebooks Prequel](python-notebooks-prequel.md)
