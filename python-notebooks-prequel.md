@@ -53,19 +53,22 @@ ___
 
  ```py
  def do_nothing():
-  pass
+     pass
  ```
 
-	This function is syntactically correct Python, so it runs when called,  but the function takes no input, returns no output, and has no side effects.
-  - In order for functions to run, we must call them by name. A function merely being defined doesn't cause anything to happen. _The actions in the function happen when the function is called_. We would call the above function like this:
+This function is syntactically correct Python, so it runs when called,  but the function takes no input, returns no output, and has no side effects.
+ 
+ In order for functions to run, we must call them by name. A function merely being defined doesn't cause anything to happen. _The actions in the function happen when the function is called_. We would call the above function like this:
+ 
  ```py
  do_nothing()
  ```
 
-	And I would expect to see no output.
+And I would expect to see no output.
+
  Note that I can call a function in the Python shell, where I see the `>>>` prompt, or I can call the function within a bigger Python program, a file with the extension `.py`. If I want to run that program, in the terminal I would run
- > `python my_program.py`
-	>
+`python my_program.py`
+
 ---
 
 - **Parameters** are placeholders in the signature line of a function, in anticipation of input. When the function is called, actual _arguments_ are passed and assigned to the placeholder tags. The function then does what it is instructed to do with the input. For example, if we have a function called `double` that's meant to return double a number, we would write it like this:
