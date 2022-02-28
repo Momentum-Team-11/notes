@@ -21,3 +21,6 @@
 - [Intro to Python](intro-python.md)
 - [Python Notebooks Prequel](python-notebooks-prequel.md)
 - [Lists, Dictionaries, and Tuples](py-lists-dicts-tuples.md)
+- [Client-Server Diagram](client-server-diagram.md)
+- [Diagram of a Django App](django-diagram.md)
+- [Django File Tour](django-tour.md)
