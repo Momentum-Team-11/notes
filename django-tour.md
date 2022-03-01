@@ -5,13 +5,11 @@ by other people, which can make it feel daunting. This guide
 is meant to give you some things to think about and prioritize when
 getting started with Django.
 
-This guide uses a django app called [Uptact](https://github.com/Momentum-Team-10/example-django-uptact) as example code.
-
 ## Django Creates a lot of Infrastructure
 
-When you run `django-admin startproject <your_project> .` or when you create a project using the Momentum Django Template, which runs that command, Django creates a number of files and directories. Let's have a look at them. Files marked with a 🙅‍♀️ are files that you leave as is and do not edit.
+When you run `django-admin startproject <your_project> .` , Django creates a number of files and directories. Let's have a look at them. Files marked with a 🙅‍♀️ are files that you leave as is and do not edit.
 
-- Inside the `uptact` [directory](https://github.com/Momentum-Team-10/example-django-uptact/tree/main/uptact)
+- Inside the `config` [project directory](https://github.com/Momentum-Team-10/example-django-uptact/tree/main/uptact)
   - 🙅‍♀️ `__init__.py` - has no contents, but it has to be present so that python treats it like a module, which you can import and use elsewhere in the app.
   - `.env` - contains variables whose values you want to keep secret. `django-environ` helps read the values of these variables.
   - 🙅‍♀️ `asgi.py` - used in deployment
@@ -24,7 +22,7 @@ When you run `django-admin startproject <your_project> .` or when you create a p
   - `urls.py` - you will add urls here that users will visit or that will be API endpoints.
   - 🙅‍♀️ `wsgi.py` - also used in deployment.
 
-The `django-admin startapp <appname>` command creates individual "apps" inside your Django project, which each have a set structure and collection of files. The [Momentum Django Template](https://github.com/Momentum-Team-8/momentum-django-project-template) runs this command to create a `users` app and a main app for the project. Colloquially, we call the whole Django project an "app," but, in strict Django terminology, an "app" is a specific unit of structure and function within a project. The Django projects we build will likely have two "apps", `users` and `<the main app>`. Uptact has `users` and `contacts`, which each contain the same kinds of files.
+The `python manage.py startapp <appname>` command creates individual "apps" inside your Django project, which each have a set structure and collection of files. Colloquially, we call the whole Django project an "app," but, in strict Django terminology, an "app" is a specific unit of structure and function within a project. The Django projects we build will likely have two "apps", `users` and `<the main app>`. Uptact has `users` and `contacts`, which each contain the same kinds of files.
 
 - `migrations/` - when you run `./manage.py makemigrations` Django checks for changes in your models and generates migration files that contain instructions for changing the database to match the models. `./manage.py migrate` actually applies the migrations files to the database.
   - 🙅‍♀️ `__init__.py`
