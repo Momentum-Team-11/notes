@@ -24,3 +24,5 @@
 - [Client-Server Diagram](client-server-diagram.md)
 - [Diagram of a Django App](django-diagram.md)
 - [Django File Tour](django-tour.md)
+- [Django Shell Example](django-shell.md)
+- [Database: PKs and FKs](pks_and_fks.md)
