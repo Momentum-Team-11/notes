@@ -30,7 +30,7 @@ A table has a **primary key** which uniquely identifies that row.
 
 ## Foreign keys are for related data
 
-This table is fine if all we need to know about an artist is their name. But if we need to record more information about an _artist_, that belongs grouped with _artist_ data, not with _album data. After all, one artist could have more than one album and **we don't want to duplicate the same data in multiple places**.
+This table is fine if all we need to know about an artist is their name. But if we need to record more information about an _artist_, that belongs grouped with _artist_ data, not with _album_ data. After all, one artist could have more than one album and **we don't want to duplicate the same data in multiple places**.
 
 ![](images/table_artists.png)
 
