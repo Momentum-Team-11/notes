@@ -1,4 +1,4 @@
-# What is a Foreign Key?
+# What are Primary Keys and Foreign Keys?
 
 Let's back up and talk about the database generally. Specifically, a **relational database**, which lets us store data across multiple tables and make connections between the tables. A SQL database, like SQLite or PostgreSQL, is a relational database.
 
