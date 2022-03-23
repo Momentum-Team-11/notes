@@ -29,6 +29,10 @@
 - [Diagram of O2M and M2M model relationships](O2M-and-M2M.md)
 - [Diagram with more O2M and M2M model relationships](more-models-and-rels.md)
 
-### Phase 3 | Back End
+### Phase 3 | Back End 🐻
 
 - [Django Queries Cheatsheet](django-queries.md)
+
+### Phase 3 | Front End 🦊
+
+- [JS for React](js-for-react.md)
